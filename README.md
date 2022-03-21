@@ -1,16 +1,16 @@
 # CS 490 Group Project
 
-### Title of our app: MedTech
+## Title of our app: MedTech
 
 ### Description:
-What does our app do? (Keep this to 1-3 sentences)
+The purpose of our app is to help educate users on how to properly handle a medical emergency if/when one occurs. It will contain information about various emergencies, prevention tips, how to spot early symptoms etc. Furthermore, it will focus on how to react to a current emergency, guiding a user through the necessary steps. For example, after confirming that an emergency is a heart attack, the application would provide step by step instructions on what to do. It will also include a button to quickly call authorities and will contain any helpful tips, videos, gifs, music, etc. to best guide the user.
 
 ### App Evaluation
 Category: Medical / Health
-Mobile: Given that not everyone carries their computer on them at all times, having [insert app name here] on mobile makes it more flexible [insert more stuff about how it’s very useful during an emergency, everyone has phones]
+Mobile: Given that not everyone carries their computer on them at all times, having MedTech on mobile makes it more flexible for paramedics, nurses, doctors, and other hospital workers to help individuals during a medical crisis.
 Story: Analyzes user’s health conditions and medical info, provides tutorials on major medical emergencies, provides prevention tips
-Market: Anyone! [insert specific audience] [anyone willing to help in the case of a medical emergency] [people with pre-existing conditions]
-Habit: [How often will this application be used by the user? Daily? Weekly? When?]
+Market: Everyone! Anyone willing to help in the case of a medical emergency, people with pre-existing medical conditions, hospital workers
+Habit: This application will be accessed by the user when there is a medical emergency, when medical info needs to be updated, and maybe during medical appointments
 Scope: [What do we plan to do in the span of a few weeks] [What potential does it have, how can we evolve] [Future collaboration with maybe hospitals, pharmacies, etc]
 
 ### Product Spec
@@ -29,16 +29,22 @@ Screen Archetypes
 Login
 Register
 What data do we need upon registration?
+Current medications
+Pre-existing conditions
+Family history
 Does the user have to do the quiz?
-Etc etc
+Confirmation
 Home screen?
-Needed? Idk yet
+
+
 Personal Health Tracking
-[Insert Purpose Here]
+Diet, weight, exercise, etc
 Medical Info & Prevention Tips
-[Insert Purpose Here]
+
+
 Current Emergency Help
-[Insert Purpose Here]
+Instructions
+HIPAA / Consent Form (to allow hospitals to gain MedTech card)
 
 Navigation
 Tab Navigation (Tab to Screen)
@@ -51,5 +57,6 @@ Forced Log-In -> Home Screen
 Shortcut -> Current Emergency Help
 Current Emergency Help -> Quiz
 
-Digital Wireframes & Mockups
+### Digital Wireframes & Mockups
 Interactive Prototype
+
