@@ -1,4 +1,4 @@
-# MedTech - CS 490 Group Project
+# MedTech
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -78,10 +78,110 @@ The purpose of our app is to help educate users on how to properly handle a medi
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+**Model: User**
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| username | String | unique id for user login |
+| password | String | unique password id for user login |
+| dateOfBirth | String | used to verify consent or something idk, also to calculate age |
+| legal_name | String | FirstName LastName |
+| consent | Boolean | consent to release information to hospitals, no third-parties involved, HIPAA contract |
+| createdAt | DateTime | date when user created account |
+
+**Personal Information**
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| main_address | Dictionary | current place of residence of user |
+| emergency_contacts | Dictionary | optional list of emergency contacts, defined by user |
+| updated_info | DateTime | date when personal information was last updated (default field) |
+
+**Medical Information**
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| height | Double | height of user |
+| weight | Double | weight of user |
+| family_history | Dictionary | medical history in user's family |
+| current_medications | Dictionary | list of current meds taken by user |
+| allergies | Dictionary | current relevant allergies of user |
+| past_surgeries | Dictionary | lists past surgeries of user |
+| updated_info | DateTime | date when medical information was last updated (default field) |
+
+**Medical Emergency**
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| emergencyName | String | name of the emergency |
+| emergencySteps | Dictionary | steps to take to escalate the emergency |
+| emergencyStepsVisual | Dictionary | visual steps to take to escalate the emergency |
+| currentLocation | String | used to identify nearest hospital maybe |
+| consentToEmergencyContacts | Boolean | consent given by user to notify contacts |
+| consentToNearestHospital | Boolean | consent given by user to notify nearby hospital |
+| consentToParamedics | Boolean | consent given by user to notify paramedics |
+| updated_info | DateTime | date when medical emergency information was last updated (default field) |
+
+**List of Medical Emergencies we will address:**
+* Heart attack
+* Choking
+* Seizure
+* Drowning
+* Stroke
+* Anaphylactic Shock
+* Severe injuries
+* Poison Control
+* Overdosing (alcohol and / or drugs)
+* Breathing problems
+
+**Extra Medical Emergencies**
+* Severe dehydration
+* Hypothermia
+* Heat stroke
+* Loss of consciousness
+* Mental Health related things
+* Severe burns
+* Concussion
+* Paralysis
+* Broken bones
+* Electrocution
+* Chemical burns
+* Asthma
+* Diabetic reactions
+
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+#### list of network requests by screen
+
+* Profile Screen
+    * (Read/GET) Query logged in user object
+    * (Update/PUT) Update user profile image
+
+* Home Profile Screen
+    * (Read/GET) Query all existing user information or notes
+    * (Create/POST) Add new info or notes
+    * (Delete) Delete existing info or notes
+    * The following code snip will be edited and used to account for user info/notes
+         ```swift
+         let query = PFQuery(className:"Post")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+         
+         
+#### [OPTIONAL: List endpoints if using existing API]
+ ##### An API of ICD (International Classification of Diseases)
+- Base URL - https://icd.who.int/icd/api
+
+   HTTP Verb | Endpoint | Description
+   ----------|----------|------------
+    `GET`    | /icd/release/11/{linearizationname}   | returns basic info on the linearization such as MMS together w/ the list of available releases
+    `GET`    | /icd/release/11/{releaseId}/{linearizationname}/{id} | get a linearization entity
+    `GET`    | /icd/entity/{id} | returns basic info on specific latest release of ICD-11 Foundation entity
+    `GET`    | /icd/release/10   | lists the available ICD-10 releases
