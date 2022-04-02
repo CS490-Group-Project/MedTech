@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		B58B260127F8ECA80025A991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B260027F8ECA80025A991 /* AppDelegate.swift */; };
 		B58B260327F8ECA80025A991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B260227F8ECA80025A991 /* SceneDelegate.swift */; };
-		B58B260527F8ECA80025A991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B260427F8ECA80025A991 /* ViewController.swift */; };
 		B58B260827F8ECA80025A991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58B260627F8ECA80025A991 /* Main.storyboard */; };
 		B58B260A27F8ECAD0025A991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58B260927F8ECAD0025A991 /* Assets.xcassets */; };
 		B58B260D27F8ECAD0025A991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58B260B27F8ECAD0025A991 /* LaunchScreen.storyboard */; };
 		B58B261827F8ECAE0025A991 /* MedTechTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B261727F8ECAE0025A991 /* MedTechTests.swift */; };
 		B58B262227F8ECAE0025A991 /* MedTechUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B262127F8ECAE0025A991 /* MedTechUITests.swift */; };
 		B58B262427F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B262327F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift */; };
+		B58B263327F8FAC70025A991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B263227F8FAC70025A991 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		B58B25FD27F8ECA80025A991 /* MedTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58B260027F8ECA80025A991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58B260227F8ECA80025A991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B58B260427F8ECA80025A991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B58B260727F8ECA80025A991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B58B260927F8ECAD0025A991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B58B260C27F8ECAD0025A991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		B58B261D27F8ECAE0025A991 /* MedTechUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedTechUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58B262127F8ECAE0025A991 /* MedTechUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTechUITests.swift; sourceTree = "<group>"; };
 		B58B262327F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTechUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B58B263227F8FAC70025A991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				B58B260027F8ECA80025A991 /* AppDelegate.swift */,
 				B58B260227F8ECA80025A991 /* SceneDelegate.swift */,
-				B58B260427F8ECA80025A991 /* ViewController.swift */,
 				B58B260627F8ECA80025A991 /* Main.storyboard */,
+				B58B263227F8FAC70025A991 /* LoginViewController.swift */,
 				B58B260927F8ECAD0025A991 /* Assets.xcassets */,
 				B58B260B27F8ECAD0025A991 /* LaunchScreen.storyboard */,
 				B58B260E27F8ECAD0025A991 /* Info.plist */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58B260527F8ECA80025A991 /* ViewController.swift in Sources */,
+				B58B263327F8FAC70025A991 /* LoginViewController.swift in Sources */,
 				B58B260127F8ECA80025A991 /* AppDelegate.swift in Sources */,
 				B58B260327F8ECA80025A991 /* SceneDelegate.swift in Sources */,
 			);
