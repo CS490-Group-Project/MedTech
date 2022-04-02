@@ -1,0 +1,4 @@
+target 'MedTech' do
+	pod 'Parse'
+ 	pod 'AlamofireImage'
+end
