@@ -1,4 +1,4 @@
-module Pods_MedTech {
+framework module Pods_MedTech {
   umbrella header "Pods-MedTech-umbrella.h"
 
   export *

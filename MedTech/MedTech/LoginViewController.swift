@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
     
@@ -46,6 +47,51 @@ class LoginViewController: UIViewController {
             iconClick = true
             tappedImage.image = UIImage(named: "closed_eye")
             passwordTextField.isSecureTextEntry = true
+        }
+    }
+    
+    @IBAction func onSignIn(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextField.text
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription ?? "Unknown Error")")
+                
+                // create the alert
+                let alert = UIAlertController(title: "Error", message: "An error occurred with signing up. Please try again.", preferredStyle: UIAlertController.Style.alert)
+
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    @IBAction func onLogIn(_ sender: Any) {
+        let username = usernameTextField.text!
+        let password = passwordTextField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription ?? "Unknown Error")")
+                
+                // create the alert
+                let alert = UIAlertController(title: "Error", message: "Invalid username or password. Please try again.", preferredStyle: UIAlertController.Style.alert)
+
+                // add an action (button)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
+            }
         }
     }
     

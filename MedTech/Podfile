@@ -1,4 +1,5 @@
 target 'MedTech' do
+	use_frameworks!
 	pod 'Parse'
  	pod 'AlamofireImage'
 end
