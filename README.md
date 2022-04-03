@@ -24,16 +24,16 @@ The purpose of our app is to help educate users on how to properly handle a medi
 
 **Required Must-have Stories**
 
-* User can sign-up
-* User can log-in / log-out
-* User can take a quiz
-* User can update medical information
+- [x] User can sign-up
+- [x] User can log-in / log-out
+- [ ] User can take a quiz
+- [ ] User can update medical information
 
 **Optional Nice-to-have Stories**
 
-* HIPAA Consent
-* Terms and Conditions
-* Daily Check-In
+- [ ] HIPAA Consent
+- [ ] Terms and Conditions
+- [ ] Daily Check-In
 
 ### 2. Screen Archetypes
 
