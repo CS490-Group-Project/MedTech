@@ -196,5 +196,9 @@ The purpose of our app is to help educate users on how to properly handle a medi
   ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/78234140/161456430-27684011-c6c7-4ef3-8c16-fab211ae733e.gif)
 
   
+  Launch Screen:
+  
+  ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/78234140/161457332-64f55955-7554-4060-9890-abb6c2890ec3.gif)
+
   
   
