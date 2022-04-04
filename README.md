@@ -185,3 +185,15 @@ The purpose of our app is to help educate users on how to properly handle a medi
     `GET`    | /icd/release/11/{releaseId}/{linearizationname}/{id} | get a linearization entity
     `GET`    | /icd/entity/{id} | returns basic info on specific latest release of ICD-11 Foundation entity
     `GET`    | /icd/release/10   | lists the available ICD-10 releases
+    
+    
+## Build Progress
+  ### GIFS:
+  
+  User sign up, login, logout, and error logging in:
+  
+  ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/78234140/161456430-27684011-c6c7-4ef3-8c16-fab211ae733e.gif)
+
+  
+  
+  
