@@ -1,5 +1,7 @@
 # MedTech
 
+<img src="https://cdn.discordapp.com/attachments/950515792372453472/962905033991671848/1649644804071.png" width=400>
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
