@@ -194,6 +194,9 @@ The purpose of our app is to help educate users on how to properly handle a medi
     
 ## Build Progress
   ### GIFS:
+  Added New Logo:
+  
+  <img src="https://github.com/CS490-Group-Project/MedTech/blob/main/Sprint%203.gif" width=300>
   
   User can update medical information:
   
