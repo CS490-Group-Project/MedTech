@@ -9,7 +9,10 @@ import UIKit
 import Parse
 
 class MainNavigationViewController: UIViewController {
-
+    @IBAction func medInfoButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMedInfoScreen", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
