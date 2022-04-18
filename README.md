@@ -1,6 +1,8 @@
 # MedTech
 
+<img src="https://user-images.githubusercontent.com/78234140/163745567-e9256bd9-baf7-4963-ac75-eafa11c18213.png" width = 100>
 <img src="https://cdn.discordapp.com/attachments/950515792372453472/962905033991671848/1649644804071.png" width=400>
+
 
 ## Table of Contents
 1. [Overview](#Overview)
