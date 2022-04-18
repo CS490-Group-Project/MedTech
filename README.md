@@ -33,9 +33,16 @@ The purpose of our app is to help educate users on how to properly handle a medi
 - [x] User can log-in / log-out
 - [ ] User can take a quiz
 - [x] User can update medical information
+- [x] Launch screen w/ logo
+- [x] Main nav page w/ emergency, med info, and personal tracker screens
+- [x] Tab navigation (home and more sections)
+- [x] Home screen w/ about, settings, logout, etc
+- [ ] App icon 
+
 
 **Optional Nice-to-have Stories**
 
+- [x] User can view/hide password when signing in
 - [ ] HIPAA Consent
 - [ ] Terms and Conditions
 - [ ] Daily Check-In
