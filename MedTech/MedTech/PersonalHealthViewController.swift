@@ -1,26 +1,22 @@
 //
-//  MedInfoViewController.swift
+//  PersonalHealthViewController.swift
 //  MedTech
 //
-//  Created by Rachel Sacdalan on 4/17/22.
+//  Created by Rachel Sacdalan on 4/18/22.
 //
 
 import UIKit
 
-class MedInfoViewController: UIViewController {
+class PersonalHealthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func updateMedInfoButton(_ sender: Any) {
-        // TODO: Add data functionality here (Parse stuff)
-        self.performSegue(withIdentifier: "medInfoToNav", sender: nil)
-    }
-
+    
     @IBAction func backButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "medInfoToNav", sender: nil)
+        self.performSegue(withIdentifier: "personalHealthToNav", sender: nil)
     }
     
     /*

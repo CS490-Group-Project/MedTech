@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B55C72CE280D13FF001D54ED /* MedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C72CD280D13FE001D54ED /* MedInfoViewController.swift */; };
+		B55C72D0280D2D92001D54ED /* EmergenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C72CF280D2D92001D54ED /* EmergenciesViewController.swift */; };
+		B55C72D2280D2DDB001D54ED /* PersonalHealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C72D1280D2DDB001D54ED /* PersonalHealthViewController.swift */; };
+		B55C72D4280D30B7001D54ED /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C72D3280D30B7001D54ED /* MoreViewController.swift */; };
 		B58B260127F8ECA80025A991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B260027F8ECA80025A991 /* AppDelegate.swift */; };
 		B58B260327F8ECA80025A991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B260227F8ECA80025A991 /* SceneDelegate.swift */; };
 		B58B260827F8ECA80025A991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58B260627F8ECA80025A991 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		B55C72CD280D13FE001D54ED /* MedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedInfoViewController.swift; sourceTree = "<group>"; };
+		B55C72CF280D2D92001D54ED /* EmergenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergenciesViewController.swift; sourceTree = "<group>"; };
+		B55C72D1280D2DDB001D54ED /* PersonalHealthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHealthViewController.swift; sourceTree = "<group>"; };
+		B55C72D3280D30B7001D54ED /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		B58B25FD27F8ECA80025A991 /* MedTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58B260027F8ECA80025A991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58B260227F8ECA80025A991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				B58B260027F8ECA80025A991 /* AppDelegate.swift */,
 				B58B260227F8ECA80025A991 /* SceneDelegate.swift */,
 				B58B260627F8ECA80025A991 /* Main.storyboard */,
+				B55C72D3280D30B7001D54ED /* MoreViewController.swift */,
+				B55C72D1280D2DDB001D54ED /* PersonalHealthViewController.swift */,
+				B55C72CF280D2D92001D54ED /* EmergenciesViewController.swift */,
 				B55C72CD280D13FE001D54ED /* MedInfoViewController.swift */,
 				B58C4BE727F919B900722D75 /* MainNavigationViewController.swift */,
 				B58B263227F8FAC70025A991 /* LoginViewController.swift */,
@@ -332,9 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55C72D2280D2DDB001D54ED /* PersonalHealthViewController.swift in Sources */,
 				B58B263327F8FAC70025A991 /* LoginViewController.swift in Sources */,
 				B58C4BE827F919BA00722D75 /* MainNavigationViewController.swift in Sources */,
+				B55C72D0280D2D92001D54ED /* EmergenciesViewController.swift in Sources */,
 				B58B260127F8ECA80025A991 /* AppDelegate.swift in Sources */,
+				B55C72D4280D30B7001D54ED /* MoreViewController.swift in Sources */,
 				B55C72CE280D13FF001D54ED /* MedInfoViewController.swift in Sources */,
 				B58B260327F8ECA80025A991 /* SceneDelegate.swift in Sources */,
 			);

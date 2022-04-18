@@ -9,14 +9,24 @@ import UIKit
 import Parse
 
 class MainNavigationViewController: UIViewController {
-    @IBAction func medInfoButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "toMedInfoScreen", sender: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func medInfoButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMedInfoScreen", sender: nil)
+    }
+    
+    @IBAction func emergencyButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toEmergencyScreen", sender: nil)
+    }
+    
+    @IBAction func personalHealthButton(_ sender: Any) {
+        print("health")
+        self.performSegue(withIdentifier: "toHealthScreen", sender: nil)
     }
     
 
