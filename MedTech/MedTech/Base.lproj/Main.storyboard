@@ -6,6 +6,7 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -369,18 +370,6 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemBackgroundColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qc-KG-FIi">
-                                <rect key="frame" x="50" y="263" width="310" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-QC-Ww8">
-                                <rect key="frame" x="50" y="334" width="314" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-87-E2Z">
                                 <rect key="frame" x="50" y="408" width="310" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -504,6 +493,25 @@
                                     <action selector="backButton:" destination="Ofn-jf-mpe" eventType="touchUpInside" id="wXl-0P-mRJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRp-wc-PhK">
+                                <rect key="frame" x="126" y="222" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <menu key="menu" id="Pea-Bn-QLZ">
+                                    <children>
+                                        <command title="0" id="rLp-KW-7gW"/>
+                                        <command title="1" id="4Ke-Jr-S66"/>
+                                        <command title="2" id="kEj-PD-sRG"/>
+                                        <command title="3" id="7mt-qz-Msn"/>
+                                        <command title="4" id="6FL-AL-3aE"/>
+                                        <command title="5" id="FRc-QG-zXh"/>
+                                        <command title="6" id="7aJ-cC-bhR"/>
+                                        <command title="7" id="S9r-fP-RIr"/>
+                                        <command id="u0i-lE-A4w"/>
+                                        <command title="0" id="pCr-CQ-LfB"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ECc-47-8p8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -512,7 +520,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPy-Mk-qjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="u0Z-hB-Ujy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="19" y="1104"/>
+            <point key="canvasLocation" x="-749" y="817"/>
         </scene>
         <!--Emergencies View Controller-->
         <scene sceneID="daj-CG-7Oa">
@@ -532,7 +540,7 @@
                                 <connections>
                                     <action selector="backButton:" destination="4fG-Kb-P6k" eventType="touchUpInside" id="aAI-d9-NqK"/>
                                     <action selector="backButton:" destination="Ofn-jf-mpe" eventType="touchUpInside" id="e8B-ky-JkK"/>
-                                    <segue destination="o2w-12-YtM" kind="presentation" identifier="emergenciesToNav" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ttO-WQ-SLm"/>
+                                    <segue destination="mAJ-4H-u18" kind="presentation" identifier="emergenciesToNav" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="2aT-9P-R4u"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergencies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83T-SM-bNk">
@@ -549,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rL-mC-97P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="1104"/>
+            <point key="canvasLocation" x="14" y="817"/>
         </scene>
         <!--Personal Health View Controller-->
         <scene sceneID="MPx-ma-Y3K">
@@ -576,7 +584,7 @@
                                 <connections>
                                     <action selector="backButton:" destination="OrG-Ze-0Sf" eventType="touchUpInside" id="LAj-oZ-85b"/>
                                     <action selector="backButton:" destination="Ofn-jf-mpe" eventType="touchUpInside" id="vd6-fI-5co"/>
-                                    <segue destination="o2w-12-YtM" kind="presentation" identifier="personalHealthToNav" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="YI3-DI-S0A"/>
+                                    <segue destination="mAJ-4H-u18" kind="presentation" identifier="personalHealthToNav" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="uTQ-Wu-VSB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -586,7 +594,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sv-Cj-Evu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551" y="1104"/>
+            <point key="canvasLocation" x="783" y="817"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5gY-Fq-Z3h">
@@ -629,7 +637,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nCo-h2-Ggj"/>
-        <segue reference="YI3-DI-S0A"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
