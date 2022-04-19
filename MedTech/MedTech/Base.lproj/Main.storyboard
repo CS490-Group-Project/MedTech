@@ -613,6 +613,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="4Ab-gI-4vs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X73-J9-eMV">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -627,7 +628,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="W82-1K-DdD"/>
         <segue reference="nCo-h2-Ggj"/>
         <segue reference="YI3-DI-S0A"/>
     </inferredMetricsTieBreakers>
