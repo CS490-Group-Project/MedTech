@@ -21,6 +21,9 @@
 		B58B262427F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B262327F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift */; };
 		B58B263327F8FAC70025A991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B263227F8FAC70025A991 /* LoginViewController.swift */; };
 		B58C4BE827F919BA00722D75 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C4BE727F919B900722D75 /* MainNavigationViewController.swift */; };
+		B5D3F522280E7CFB0001BAA2 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F521280E7CFA0001BAA2 /* AboutViewController.swift */; };
+		B5D3F524280E7D110001BAA2 /* ChangelogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F523280E7D110001BAA2 /* ChangelogViewController.swift */; };
+		B5D3F526280E7D230001BAA2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D3F525280E7D230001BAA2 /* SettingsViewController.swift */; };
 		DF7E365000058749C406BB06 /* Pods_MedTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B0B1C891A0428509F6E0AE /* Pods_MedTech.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,9 @@
 		B58B262327F8ECAE0025A991 /* MedTechUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedTechUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B58B263227F8FAC70025A991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B58C4BE727F919B900722D75 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		B5D3F521280E7CFA0001BAA2 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B5D3F523280E7D110001BAA2 /* ChangelogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogViewController.swift; sourceTree = "<group>"; };
+		B5D3F525280E7D230001BAA2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B6B0B1C891A0428509F6E0AE /* Pods_MedTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06990D06E09291F67C9DEF0 /* Pods-MedTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTech.debug.xcconfig"; path = "Target Support Files/Pods-MedTech/Pods-MedTech.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB75FD033468FB852634DF2 /* Pods-MedTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedTech.release.xcconfig"; path = "Target Support Files/Pods-MedTech/Pods-MedTech.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 				B58B260027F8ECA80025A991 /* AppDelegate.swift */,
 				B58B260227F8ECA80025A991 /* SceneDelegate.swift */,
 				B58B260627F8ECA80025A991 /* Main.storyboard */,
+				B5D3F521280E7CFA0001BAA2 /* AboutViewController.swift */,
+				B5D3F523280E7D110001BAA2 /* ChangelogViewController.swift */,
+				B5D3F525280E7D230001BAA2 /* SettingsViewController.swift */,
 				B55C72D3280D30B7001D54ED /* MoreViewController.swift */,
 				B55C72D1280D2DDB001D54ED /* PersonalHealthViewController.swift */,
 				B55C72CF280D2D92001D54ED /* EmergenciesViewController.swift */,
@@ -343,12 +352,15 @@
 			files = (
 				B55C72D2280D2DDB001D54ED /* PersonalHealthViewController.swift in Sources */,
 				B58B263327F8FAC70025A991 /* LoginViewController.swift in Sources */,
+				B5D3F526280E7D230001BAA2 /* SettingsViewController.swift in Sources */,
 				B58C4BE827F919BA00722D75 /* MainNavigationViewController.swift in Sources */,
+				B5D3F522280E7CFB0001BAA2 /* AboutViewController.swift in Sources */,
 				B55C72D0280D2D92001D54ED /* EmergenciesViewController.swift in Sources */,
 				B58B260127F8ECA80025A991 /* AppDelegate.swift in Sources */,
 				B55C72D4280D30B7001D54ED /* MoreViewController.swift in Sources */,
 				B55C72CE280D13FF001D54ED /* MedInfoViewController.swift in Sources */,
 				B58B260327F8ECA80025A991 /* SceneDelegate.swift in Sources */,
+				B5D3F524280E7D110001BAA2 /* ChangelogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
