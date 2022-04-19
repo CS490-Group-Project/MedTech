@@ -37,7 +37,7 @@ The purpose of our app is to help educate users on how to properly handle a medi
 - [x] Main nav page w/ emergency, med info, and personal tracker screens
 - [x] Tab navigation (home and more sections)
 - [x] Home screen w/ about, settings, logout, etc
-- [ ] App icon 
+- [x] App icon 
 
 
 **Optional Nice-to-have Stories**
