@@ -227,13 +227,13 @@ The purpose of our app is to help educate users on how to properly handle a medi
 
 ![emergencySeizure](https://user-images.githubusercontent.com/78234140/165152144-de4b0754-99f0-4292-9242-8ea8b01ae537.gif)
 
-  
-  
-  
+"More" story, including about section, changelog, and settings options:
 
+![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/78234140/165153689-0e19476e-63a4-452c-990d-f84229c2fd7e.gif)
 
   
- 
+  
+  
 
   
   
