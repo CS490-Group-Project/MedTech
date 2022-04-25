@@ -3077,13 +3077,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="WQR-Vp-gZI"/>
-=======
         <segue reference="Iop-fB-h4f"/>
 
         <segue reference="xA7-0T-Qp8"/>
->>>>>>> dc46ec546e85b931259607f750a2198cbbe55773
         <segue reference="QDg-rM-GOU"/>
     </inferredMetricsTieBreakers>
     <resources>
