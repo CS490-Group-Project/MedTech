@@ -31,21 +31,18 @@ The purpose of our app is to help educate users on how to properly handle a medi
 
 - [x] User can sign-up
 - [x] User can log-in / log-out
-- [ ] User can take a quiz
 - [x] User can update medical information
 - [x] Launch screen w/ logo
 - [x] Main nav page w/ emergency, med info, and personal tracker screens
 - [x] Tab navigation (home and more sections)
 - [x] Home screen w/ about, settings, logout, etc
-- [x] App icon 
+- [x] App icon
+- [x] Emergency response stories
 
 
 **Optional Nice-to-have Stories**
 
 - [x] User can view/hide password when signing in
-- [ ] HIPAA Consent
-- [ ] Terms and Conditions
-- [ ] Daily Check-In
 
 ### 2. Screen Archetypes
 
@@ -201,22 +198,41 @@ The purpose of our app is to help educate users on how to properly handle a medi
     
 ## Build Progress
   ### GIFS:
-  Added New Logo:
   
-  <img src="https://github.com/CS490-Group-Project/MedTech/blob/main/Sprint%203.gif" width=300>
+  App icon and launch screen:
   
-  User can update medical information:
+  ![appIcon:LaunchScreen](https://user-images.githubusercontent.com/78234140/165003834-2e1871bf-afe1-4909-ab64-d06d156b521d.gif)
   
-  <img src="https://github.com/CS490-Group-Project/MedTech/blob/main/Sprint%202.gif" width=300>
   
   User sign up, login, logout, and error logging in:
   
-  ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/78234140/161456430-27684011-c6c7-4ef3-8c16-fab211ae733e.gif)
+  ![login:signup:logout](https://user-images.githubusercontent.com/78234140/165003853-a85a75d5-e02d-4adc-a141-65a0988c4e14.gif)
+  
+  
+  Emergency story page:
+  
+  ![emergencyStory](https://user-images.githubusercontent.com/78234140/165004466-c0d16b21-5bab-436d-b22d-a80780be3c49.gif)
 
   
-  Launch Screen:
+  User can update medical information:
   
-  ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/78234140/161457332-64f55955-7554-4060-9890-abb6c2890ec3.gif)
+  ![pinformationStory](https://user-images.githubusercontent.com/78234140/165004630-fd47f57b-2a89-439e-adb9-2be9ebadc13b.gif)
+
+  
+  Emergency story with step-by-step instructions on how to respond:
+  
+  ![emergencyHeartAttack](https://user-images.githubusercontent.com/78234140/165004009-f8ffb158-d485-403a-b3b2-d739e163a86d.gif)
+  
+  ![emergencyChoking](https://user-images.githubusercontent.com/78234140/165142627-aec3e434-377a-4405-8187-c8e5616ef5be.gif)
+
+
+  
+  
+  
+
+
+  
+ 
 
   
   
