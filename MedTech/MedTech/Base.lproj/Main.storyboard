@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -242,6 +242,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i9Y-am-Xzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2311.594202898551" y="68.973214285714278"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="BNN-f6-fVx">
+            <objects>
+                <viewController id="rjN-LV-fSW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FKF-X5-XFc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MedTech" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKZ-xJ-h7X">
+                                <rect key="frame" x="20" y="44" width="190" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="medtech_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-Xx-M4S">
+                                <rect key="frame" x="337" y="44" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ0-qa-1tC" userLabel="Emergencies">
+                                <rect key="frame" x="-475" y="112" width="1365" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="map" imageContentMode="scaleAspectFill"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="emergencyButton:" destination="o2w-12-YtM" eventType="touchUpInside" id="J0u-bn-1YW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coming Soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl8-bR-qZC">
+                                <rect key="frame" x="65" y="356" width="284" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aFY-aw-tTD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" selectedImage="map.fill" id="GGo-wS-eLk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVp-3a-W4I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3111.594202898551" y="-649.55357142857144"/>
         </scene>
         <!--More-->
         <scene sceneID="tM2-0f-yCS">
@@ -1198,6 +1254,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="o2w-12-YtM" kind="relationship" relationship="viewControllers" id="K0a-Kk-lXT"/>
+                        <segue destination="rjN-LV-fSW" kind="relationship" relationship="viewControllers" id="TZY-oQ-j9z"/>
                         <segue destination="36E-m3-LWY" kind="relationship" relationship="viewControllers" id="sjg-zm-2sD"/>
                     </connections>
                 </tabBarController>
@@ -2267,7 +2324,7 @@
         <scene sceneID="lLa-iL-Raj">
             <objects>
                 <viewController id="PWZ-Us-sqm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="jHI-jb-Sg5">
+                    <view key="view" contentMode="scaleToFill" id="jHI-jb-Sg5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1322"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -2999,8 +3056,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sjg-zm-2sD"/>
         <segue reference="xA7-0T-Qp8"/>
-        <segue reference="0my-tG-b8E"/>
+        <segue reference="60c-Kk-H0E"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
@@ -3011,6 +3069,9 @@
         <image name="heart-black-shape" width="512" height="512"/>
         <image name="hurted-finger-with-bandage" width="512" height="512"/>
         <image name="lungs-silhouette" width="512" height="512"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="map" width="960" height="540"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="medemergency_button" width="594" height="395"/>
         <image name="medinfo_button" width="588" height="396"/>
         <image name="medtech_logo" width="1649" height="1649"/>
