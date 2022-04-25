@@ -14,6 +14,36 @@ class EmergenciesViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func overdoseButton(_ sender: Any) {
+        // create the alert
+        let alert = UIAlertController(title: "Coming Soon!", message: "We will be adding more emergencies in the next update. Stay tuned!", preferredStyle: UIAlertController.Style.alert)
+
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func breathingProblemsButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Coming Soon!", message: "We will be adding more emergencies in the next update. Stay tuned!", preferredStyle: UIAlertController.Style.alert)
+
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func severeInjuriesButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Coming Soon!", message: "We will be adding more emergencies in the next update. Stay tuned!", preferredStyle: UIAlertController.Style.alert)
+
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
     
     @IBAction func backButton(_ sender: Any) {
         self.performSegue(withIdentifier: "emergenciesToNav", sender: nil)
