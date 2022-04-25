@@ -289,7 +289,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="SAZ-Cy-Jsi" kind="presentation" identifier="moreToSettings" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="3l5-9F-Vaa"/>
+                                    <action selector="settingsButton:" destination="36E-m3-LWY" eventType="touchUpInside" id="ohi-bb-zaS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfh-e0-aGR">
@@ -1032,7 +1032,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="8ak-ym-OEG" kind="presentation" identifier="emergenciesToOverdose" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="oRh-Hq-4Ir"/>
+                                    <action selector="overdoseButton:" destination="4fG-Kb-P6k" eventType="touchUpInside" id="Zn0-Ey-JYb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dka-7C-jIx">
@@ -1054,7 +1054,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="rZG-Ix-rpX" kind="presentation" identifier="emergenciesToBreathingProblems" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="ieZ-Zp-Lt1"/>
+                                    <action selector="breathingProblemsButton:" destination="4fG-Kb-P6k" eventType="touchUpInside" id="R4y-7b-O4S"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Heart Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suK-Ac-e1G">
@@ -1118,7 +1118,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="kP2-yI-s7n" kind="presentation" identifier="emergenciesToSevereInjuries" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="H3E-Th-hpp"/>
+                                    <action selector="severeInjuriesButton:" destination="4fG-Kb-P6k" eventType="touchUpInside" id="ViK-k6-Kll"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2344,12 +2344,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-PA-oyD">
-                                <rect key="frame" x="20" y="44" width="39" height="31"/>
+                                <rect key="frame" x="20.5" y="44" width="39" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="OLk-uy-jtw"/>
                                 </constraints>
-
-
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="arrow.left" catalog="system"/>
@@ -2362,7 +2360,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Response Guide-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9u-52-fuq">
-                                <rect key="frame" x="119" y="100" width="172" height="31"/>
+                                <rect key="frame" x="119" y="102" width="172" height="29"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2374,7 +2372,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ge0-hM-uxB">
-                                <rect key="frame" x="0.0" y="139" width="414" height="1190"/>
+                                <rect key="frame" x="0.0" y="133" width="414" height="1190"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVG-1B-Z4X" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1190"/>
@@ -2488,7 +2486,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW6-RT-2CG">
                                                         <rect key="frame" x="10" y="60" width="380" height="307"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <mutableString key="text">Sit down and hold the infant facedown on your forearm which rests on your thigh. Support their head and neck with your hand, and place their head lower than their bottom. Thump the infant gently but firmly 5 times on the middle of the back with the heel of your hand. Turn the infant faceup, if still not breathing, use two fingers at the center of their breastbone and give 5 quck chest compressions, allowing the chest to rise between compressions.  Repeat back blows and chest thrusts, calling 911 if the infant remain unable to breath</mutableString>
+                                                        <string key="text">Sit down and hold the infant facedown on your forearm which rests on your thigh. Support their head and neck with your hand, and place their head lower than their bottom. Thump the infant gently but firmly 5 times on the middle of the back with the heel of your hand. Turn the infant faceup, if still not breathing, use two fingers at the center of their breastbone and give 5 quck chest compressions, allowing the chest to rise between compressions.  Repeat back blows and chest thrusts, calling 911 if the infant remain unable to breath</string>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2553,7 +2551,6 @@
                             <constraint firstItem="D1G-ZL-7FJ" firstAttribute="leading" secondItem="Zps-PA-oyD" secondAttribute="trailing" constant="81" id="nAB-Jg-Wwd"/>
                             <constraint firstItem="Ge0-hM-uxB" firstAttribute="top" secondItem="G9u-52-fuq" secondAttribute="bottom" constant="2" id="toB-61-y2U"/>
                             <constraint firstAttribute="bottom" secondItem="Ge0-hM-uxB" secondAttribute="bottom" id="txL-je-t63"/>
-
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1322"/>
@@ -2673,10 +2670,8 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Administer asprin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-Y5-C8T">
                                                         <rect key="frame" x="105" y="9" width="285" height="40"/>
-
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="VXI-pw-heM"/>
                                                         </constraints>
@@ -2684,7 +2679,6 @@
                                                         <color key="textColor" red="0.70505515819999998" green="0.15965269030000001" blue="0.074308057299999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -3077,9 +3071,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Iop-fB-h4f"/>
-
-        <segue reference="xA7-0T-Qp8"/>
+        <segue reference="2aT-9P-R4u"/>
         <segue reference="QDg-rM-GOU"/>
     </inferredMetricsTieBreakers>
     <resources>
