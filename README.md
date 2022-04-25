@@ -222,6 +222,9 @@ The purpose of our app is to help educate users on how to properly handle a medi
   Emergency story with step-by-step instructions on how to respond:
   
   ![emergencyHeartAttack](https://user-images.githubusercontent.com/78234140/165004009-f8ffb158-d485-403a-b3b2-d739e163a86d.gif)
+  
+  ![emergencyChoking](https://user-images.githubusercontent.com/78234140/165142627-aec3e434-377a-4405-8187-c8e5616ef5be.gif)
+
 
   
   
