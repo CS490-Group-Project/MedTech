@@ -225,6 +225,7 @@ The purpose of our app is to help educate users on how to properly handle a medi
   
   ![emergencyChoking](https://user-images.githubusercontent.com/78234140/165142627-aec3e434-377a-4405-8187-c8e5616ef5be.gif)
 
+![emergencySeizure](https://user-images.githubusercontent.com/78234140/165152144-de4b0754-99f0-4292-9242-8ea8b01ae537.gif)
 
   
   
